@@ -1,21 +1,21 @@
 /* /Components/AppBar/AppBar.razor.rz.scp.css */
 .main-appbar[b-k7kxtcavde] {
   position: absolute;
-  left: 0;
+  right: 0;
+  width: 100%;
   top: 0;
   height: 90px;
   min-height: 90px;
   padding: 0;
   background: transparent !important;
   box-shadow: none;
-  z-index: 100000;
   display: flex;
   align-items: stretch;
 }
 
 .appbar-bg[b-k7kxtcavde] {
-  width: calc(100% - 240px);
-  margin-left: auto;
+  width: 100%;
+  justify-content: flex-end;
   height: 60px;
   display: flex;
   align-items: center;
@@ -78,6 +78,7 @@
   --mud-palette-drawer-icon: #fff !important;
   --mud-palette-primary: #fff !important;
 }
+
 
 .nav-link[b-opwouz2lp2] {
   width: 100%;
