@@ -17,14 +17,6 @@
       "PackagePath": "staticwebassets/css/app.css"
     },
     {
-      "Id": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/css/bootstrap/bootstrap.min.css",
-      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
-    },
-    {
-      "Id": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/css/bootstrap/bootstrap.min.css.map",
-      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
-    },
-    {
       "Id": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },

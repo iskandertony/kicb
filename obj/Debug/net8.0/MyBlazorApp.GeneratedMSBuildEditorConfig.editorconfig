@@ -26,26 +26,18 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mans/projects/Kicb/MyBlazorApp/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/mans/projects/Kicb/MyBlazorApp/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/mans/projects/Kicb/MyBlazorApp/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvV2VhdGhlci5yYXpvcg==
+[/Users/mans/projects/Kicb/MyBlazorApp/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGFzaGJvYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/mans/projects/Kicb/MyBlazorApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/mans/projects/Kicb/MyBlazorApp/Components/Sidebar/Sidebar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaWRlYmFyL1NpZGViYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-opwouz2lp2
+
 [/Users/mans/projects/Kicb/MyBlazorApp/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-uwjohrdo2z
-
-[/Users/mans/projects/Kicb/MyBlazorApp/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-j073ci6hee
