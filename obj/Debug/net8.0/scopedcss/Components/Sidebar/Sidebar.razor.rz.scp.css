@@ -1,132 +1,48 @@
 .sidebar[b-opwouz2lp2] {
-  width: 220px;
-  background-color: #1f2a37;
+  --mud-palette-drawer-icon: #fff !important;
+  --mud-palette-primary: #fff !important;
+  background-color: #1E293B;
   color: white;
   height: 100vh;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  transition: width 0.3s ease;
-  overflow-y: auto;
+  width: 240px;
 }
 
-.sidebar.collapsed[b-opwouz2lp2] {
-  width: 80px;
-}
-
-.collapse-button[b-opwouz2lp2] {
-  background: none;
-  border: none;
-  color: white;
-  margin-bottom: 20px;
-  font-size: 18px;
-  cursor: pointer;
-  align-self: flex-end;
-}
-
-.menu[b-opwouz2lp2] {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-/* Главное: NavLink — сброс стилей по умолчанию */
-.menu-item[b-opwouz2lp2] {
+.nav-link[b-opwouz2lp2] {
+  color: #9ca3af;
+  font-size: 14px;
+  padding-left: 16px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 10px 12px;
-  background-color: #2d3748;
-  border-radius: 8px;
+}
+
+.nav-link .mud-icon-root[b-opwouz2lp2] {
+  margin-right: 12px;
+}
+
+.nav-link.mud-nav-link-active[b-opwouz2lp2] {
+  background-color: #2563eb;
+  color: white;
+}
+
+.mud-nav-group-title[b-opwouz2lp2] {
   color: #9ca3af;
-  text-decoration: none;
-  transition: background 0.2s ease;
-  cursor: pointer;
 }
 
-/* Иконка наследует цвет */
-.menu-item i[b-opwouz2lp2] {
-  font-size: 18px;
-  width: 24px;
-  text-align: center;
-  color: inherit;
+.mud-nav-group-title .mud-icon-root[b-opwouz2lp2] {
+  margin-right: 12px;
 }
 
-/* Текст метки */
-.menu-item .label[b-opwouz2lp2] {
-  font-size: 14px;
-  color: inherit;
-  white-space: nowrap;
+.mud-nav-group-title .mud-nav-link-expand-icon[b-opwouz2lp2] {
+  color: white !important;
 }
 
-/* Hover */
-.menu-item:hover[b-opwouz2lp2] {
-  background-color: #4a5568;
+.nav-group .mud-nav-link[b-opwouz2lp2] {
+  padding-left: 36px;
+  font-size: 13px;
 }
 
-/* Active */
-.menu-item.active[b-opwouz2lp2] {
-  background-color: #4a5568;
-  color: #ffffff;
-}
 
-/* Active иконка тоже белая */
-.menu-item.active i[b-opwouz2lp2] {
-  color: #ffffff;
-}
-
-/* Стрелка для выпадающего меню */
-.arrow[b-opwouz2lp2] {
-  margin-left: auto;
-  font-size: 12px;
-  color: #cbd5e1;
-}
-
-/* Подменю */
-.submenu[b-opwouz2lp2] {
-  list-style: none;
-  padding-left: 38px;
-  margin-top: 6px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-/* Подменю элемент */
-.submenu-item[b-opwouz2lp2] {
-  font-size: 14px;
-  padding: 6px 8px;
-  border-radius: 4px;
-  color: #9ca3af;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-/* Hover и Active */
-.submenu-item:hover[b-opwouz2lp2],
-.submenu-item.active[b-opwouz2lp2] {
-  background-color: #4a5568;
-  color: #ffffff;
-}
-
-.expandable[b-opwouz2lp2] {
-  cursor: pointer;
-}
-
-/* Удаление подчёркиваний и синих ссылок в любом состоянии */
-.menu-item:link[b-opwouz2lp2],
-.menu-item:visited[b-opwouz2lp2],
-.menu-item:focus[b-opwouz2lp2],
-.menu-item:active[b-opwouz2lp2],
-.submenu-item:link[b-opwouz2lp2],
-.submenu-item:visited[b-opwouz2lp2],
-.submenu-item:focus[b-opwouz2lp2],
-.submenu-item:active[b-opwouz2lp2] {
-  text-decoration: none;
-  color: inherit;
+.sidebar .mud-nav-link-expand-icon[b-opwouz2lp2] {
+  color: white !important;
+  fill: white !important;
 }

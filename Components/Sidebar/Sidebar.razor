@@ -1,96 +1,26 @@
-@using Microsoft.AspNetCore.Components.Routing
+@using MudBlazor
 
-@code {
-    private bool isCollapsed = false;
+<div class="sidebar">
+    <MudNavMenu Dense="true">
 
-    private Dictionary<string, bool> submenuStates = new()
-    {
-        { "taxes", false },
-        { "portal", false }
-    };
+        <MudNavLink Href="/" Icon="@Icons.Material.Filled.Home" Match="NavLinkMatch.All" Class="nav-link">
+            <span class="label">Главная</span>
+        </MudNavLink>
 
-    private void ToggleSidebar() => isCollapsed = !isCollapsed;
+        <MudNavGroup Title="Налоги" Icon="@Icons.Material.Filled.Receipt" ExpandIconColor="Color.White" Class="nav-group">
+            <MudNavLink Href="/taxes/declarations" Class="nav-link">Декларации</MudNavLink>
+            <MudNavLink Href="/taxes/reports" Class="nav-link">Отчёты</MudNavLink>
+        </MudNavGroup>
 
-    private void ToggleSubmenu(string key)
-    {
-        if (submenuStates.ContainsKey(key))
-        {
-            submenuStates[key] = !submenuStates[key];
-        }
-    }
+        <MudNavGroup Title="Платёжный портал" Icon="@Icons.Material.Filled.Payment" ExpandIconColor="Color.White" Class="nav-group">
+            <MudNavLink Href="/portal/invoices" Class="nav-link">Счета</MudNavLink>
+            <MudNavLink Href="/portal/history" Class="nav-link">История</MudNavLink>
+        </MudNavGroup>
 
-    private string GetSidebarClass() => isCollapsed ? "sidebar collapsed" : "sidebar";
-}
+        <MudNavGroup Title="Социальный фонд" Icon="@Icons.Material.Filled.AccountBalance" ExpandIconColor="Color.White" Class="nav-group">
+            <MudNavLink Href="/fund/payments" Class="nav-link">Платежи</MudNavLink>
+            <MudNavLink Href="/fund/statements" Class="nav-link">Выписки</MudNavLink>
+        </MudNavGroup>
 
-<div class="@GetSidebarClass()">
-    <button class="collapse-button" @onclick="ToggleSidebar">
-        @if (isCollapsed)
-        {
-            <span>&#x25B6;</span> <!-- ▶ -->
-        }
-        else
-        {
-            <span>&#x25C0;</span> <!-- ◀ -->
-        }
-    </button>
-
-    <ul class="menu">
-        <NavLink href="/" class="menu-item" ActiveClass="active" Match="NavLinkMatch.All">
-            <i class="fas fa-home"></i>
-            @if (!isCollapsed)
-            {
-                <span class="label">Главная</span>
-            }
-        </NavLink>
-
-        <NavLink href="/dashboard" class="menu-item" ActiveClass="active">
-            <i class="fas fa-chart-line"></i>
-            @if (!isCollapsed)
-            {
-                <span class="label">Дашборд</span>
-            }
-        </NavLink>
-
-        <div class="menu-item expandable" @onclick="@(() => ToggleSubmenu("taxes"))">
-            <i class="fas fa-file-invoice-dollar"></i>
-            @if (!isCollapsed)
-            {
-                <span class="label">Налоги</span>
-                <span class="arrow">@((submenuStates["taxes"]) ? "▲" : "▼")</span>
-            }
-        </div>
-
-        @if (!isCollapsed && submenuStates["taxes"])
-        {
-            <ul class="submenu">
-                <NavLink href="/taxes/declarations" class="submenu-item" ActiveClass="active">Декларации</NavLink>
-                <NavLink href="/taxes/reports" class="submenu-item" ActiveClass="active">Отчёты</NavLink>
-            </ul>
-        }
-
-        <div class="menu-item expandable" @onclick="@(() => ToggleSubmenu("portal"))">
-            <i class="fas fa-globe"></i>
-            @if (!isCollapsed)
-            {
-                <span class="label">Портал</span>
-                <span class="arrow">@((submenuStates["portal"]) ? "▲" : "▼")</span>
-            }
-        </div>
-
-        @if (!isCollapsed && submenuStates["portal"])
-        {
-            <ul class="submenu">
-                <NavLink href="/portal/payments" class="submenu-item" ActiveClass="active">Оплаты</NavLink>
-                <NavLink href="/portal/history" class="submenu-item" ActiveClass="active">История</NavLink>
-            </ul>
-        }
-
-        <NavLink href="/fund" class="menu-item" ActiveClass="active">
-            <i class="fas fa-piggy-bank"></i>
-            @if (!isCollapsed)
-            {
-                <span class="label">Соц. фонд</span>
-            }
-        </NavLink>
-    </ul>
+    </MudNavMenu>
 </div>

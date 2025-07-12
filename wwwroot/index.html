@@ -7,9 +7,10 @@
     <title>MyBlazorApp</title>
     <base href="/" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
     <link href="MyBlazorApp.styles.css" rel="stylesheet" />
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 
 <body>
@@ -26,7 +27,12 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
+
+    <!-- ✅ Blazor WebAssembly runtime -->
     <script src="_framework/blazor.webassembly.js"></script>
+
+    <!-- ✅ JS MudBlazor для диалогов, Snackbar и прочего -->
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
 </body>
 
 </html>

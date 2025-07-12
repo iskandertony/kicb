@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets/css/app.css"
     },
     {
+      "Id": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
       "Id": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },

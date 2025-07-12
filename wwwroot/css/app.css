@@ -102,25 +102,3 @@ code {
     color: #c02d76;
 }
 
-
-/* Применяется ко всем ссылкам в Sidebar */
-.sidebar a.menu-item,
-.sidebar a.menu-item:link,
-.sidebar a.menu-item:visited,
-.sidebar a.menu-item:hover,
-.sidebar a.menu-item:active,
-.sidebar a.menu-item:focus {
-  text-decoration: none !important;
-  color: #9ca3af !important;
-}
-
-/* Активный пункт */
-.sidebar a.menu-item.active {
-  background-color: #4a5568;
-  color: #ffffff !important;
-}
-
-.sidebar a.menu-item.active i {
-  color: white !important;
-}
-
