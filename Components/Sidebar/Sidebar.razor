@@ -1,16 +1,96 @@
-<div class="sidebar">
+@using Microsoft.AspNetCore.Components.Routing
+
+@code {
+    private bool isCollapsed = false;
+
+    private Dictionary<string, bool> submenuStates = new()
+    {
+        { "taxes", false },
+        { "portal", false }
+    };
+
+    private void ToggleSidebar() => isCollapsed = !isCollapsed;
+
+    private void ToggleSubmenu(string key)
+    {
+        if (submenuStates.ContainsKey(key))
+        {
+            submenuStates[key] = !submenuStates[key];
+        }
+    }
+
+    private string GetSidebarClass() => isCollapsed ? "sidebar collapsed" : "sidebar";
+}
+
+<div class="@GetSidebarClass()">
+    <button class="collapse-button" @onclick="ToggleSidebar">
+        @if (isCollapsed)
+        {
+            <span>&#x25B6;</span> <!-- ▶ -->
+        }
+        else
+        {
+            <span>&#x25C0;</span> <!-- ◀ -->
+        }
+    </button>
+
     <ul class="menu">
-        <li class="menu-item">
-            <span class="icon-placeholder"></span> Главная
-        </li>
-        <li class="menu-item">
-            <span class="icon-placeholder"></span> Налоги
-        </li>
-        <li class="menu-item">
-            <span class="icon-placeholder"></span> Платёжный портал
-        </li>
-        <li class="menu-item">
-            <span class="icon-placeholder"></span> Социальный фонд
-        </li>
+        <NavLink href="/" class="menu-item" ActiveClass="active" Match="NavLinkMatch.All">
+            <i class="fas fa-home"></i>
+            @if (!isCollapsed)
+            {
+                <span class="label">Главная</span>
+            }
+        </NavLink>
+
+        <NavLink href="/dashboard" class="menu-item" ActiveClass="active">
+            <i class="fas fa-chart-line"></i>
+            @if (!isCollapsed)
+            {
+                <span class="label">Дашборд</span>
+            }
+        </NavLink>
+
+        <div class="menu-item expandable" @onclick="@(() => ToggleSubmenu("taxes"))">
+            <i class="fas fa-file-invoice-dollar"></i>
+            @if (!isCollapsed)
+            {
+                <span class="label">Налоги</span>
+                <span class="arrow">@((submenuStates["taxes"]) ? "▲" : "▼")</span>
+            }
+        </div>
+
+        @if (!isCollapsed && submenuStates["taxes"])
+        {
+            <ul class="submenu">
+                <NavLink href="/taxes/declarations" class="submenu-item" ActiveClass="active">Декларации</NavLink>
+                <NavLink href="/taxes/reports" class="submenu-item" ActiveClass="active">Отчёты</NavLink>
+            </ul>
+        }
+
+        <div class="menu-item expandable" @onclick="@(() => ToggleSubmenu("portal"))">
+            <i class="fas fa-globe"></i>
+            @if (!isCollapsed)
+            {
+                <span class="label">Портал</span>
+                <span class="arrow">@((submenuStates["portal"]) ? "▲" : "▼")</span>
+            }
+        </div>
+
+        @if (!isCollapsed && submenuStates["portal"])
+        {
+            <ul class="submenu">
+                <NavLink href="/portal/payments" class="submenu-item" ActiveClass="active">Оплаты</NavLink>
+                <NavLink href="/portal/history" class="submenu-item" ActiveClass="active">История</NavLink>
+            </ul>
+        }
+
+        <NavLink href="/fund" class="menu-item" ActiveClass="active">
+            <i class="fas fa-piggy-bank"></i>
+            @if (!isCollapsed)
+            {
+                <span class="label">Соц. фонд</span>
+            }
+        </NavLink>
     </ul>
 </div>

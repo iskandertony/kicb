@@ -26,8 +26,32 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mans/projects/Kicb/MyBlazorApp/Pages/Dashboard.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGFzaGJvYXJkLnJhem9y
+[/Users/mans/projects/Kicb/MyBlazorApp/Pages/Fund.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRnVuZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mans/projects/Kicb/MyBlazorApp/Pages/Portal/History.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9ydGFsL0hpc3RvcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mans/projects/Kicb/MyBlazorApp/Pages/Portal/Payments.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9ydGFsL1BheW1lbnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mans/projects/Kicb/MyBlazorApp/Pages/PortalIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9ydGFsSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mans/projects/Kicb/MyBlazorApp/Pages/Taxes/Declarations.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGF4ZXMvRGVjbGFyYXRpb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mans/projects/Kicb/MyBlazorApp/Pages/Taxes/Reports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGF4ZXMvUmVwb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mans/projects/Kicb/MyBlazorApp/Pages/TaxesIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGF4ZXNJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/mans/projects/Kicb/MyBlazorApp/_Imports.razor]
@@ -41,3 +65,7 @@ build_metadata.AdditionalFiles.CssScope = b-opwouz2lp2
 [/Users/mans/projects/Kicb/MyBlazorApp/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-uwjohrdo2z
+
+[/Users/mans/projects/Kicb/MyBlazorApp/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-lgsmtgcejn
