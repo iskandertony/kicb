@@ -829,6 +829,7 @@
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.MyBlazorApp.props
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.MyBlazorApp.props
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/scopedcss/Components/AppBar/AppBar.razor.rz.scp.css
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/scopedcss/Components/Sidebar/Sidebar.razor.rz.scp.css
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/scopedcss/Layout/MainLayout.razor.rz.scp.css
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/scopedcss/Pages/Dashboard.razor.rz.scp.css

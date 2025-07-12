@@ -1,9 +1,76 @@
+/* /Components/AppBar/AppBar.razor.rz.scp.css */
+.main-appbar[b-k7kxtcavde] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 90px;
+  min-height: 90px;
+  padding: 0;
+  background: transparent !important;
+  box-shadow: none;
+  z-index: 100000;
+  display: flex;
+  align-items: stretch;
+}
+
+.appbar-bg[b-k7kxtcavde] {
+  width: calc(100% - 240px);
+  margin-left: auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 1px 4px 0 #e0e3e7;
+  border-bottom: 1px solid rgba(200,200,200,0.15);
+}
+
+.logo-placeholder[b-k7kxtcavde] {
+  margin-right: 16px;
+  color: #1976d2;
+}
+
+.lang-switch[b-k7kxtcavde] {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+  margin-right: 16px;
+}
+
+.lang-item[b-k7kxtcavde] {
+  cursor: pointer;
+  padding: 0 2px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.lang-active[b-k7kxtcavde] {
+  opacity: 1;
+  color: #1976d2;
+  cursor: default;
+}
+
+.lang-divider[b-k7kxtcavde] {
+  margin: 0 2px;
+  opacity: 0.4;
+}
+
+.notif-btn[b-k7kxtcavde],
+.theme-btn[b-k7kxtcavde],
+.profile-btn[b-k7kxtcavde] {
+  margin-left: 8px;
+}
 /* /Components/Sidebar/Sidebar.razor.rz.scp.css */
 .sidebar[b-opwouz2lp2] {
   background-color: #3a474d;
   color: white;
   height: 100vh;
-  width: 240px;
+  max-width: 240px;
+  width: 100%;
   padding: 16px 0;
   display: flex;
   flex-direction: column;
@@ -13,6 +80,7 @@
 }
 
 .nav-link[b-opwouz2lp2] {
+  width: 100%;
   color: #b0bac9;
   font-size: 15px;
   padding: 10px 20px;
@@ -53,27 +121,23 @@
 }
 
 
+
 /* /Layout/MainLayout.razor.rz.scp.css */
 .page[b-uwjohrdo2z] {
     display: flex;
+    background: #f7f8fa;
     min-height: 100vh;
-    background: #f8f9fc;
 }
-.main-content[b-uwjohrdo2z] {
-    flex: 1;
-    padding: 24px 0 0 0;
-    overflow-y: auto;
-}
-.top-row[b-uwjohrdo2z] {
-    height: 64px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #e5e7eb;
-    margin-bottom: 20px;
-}
+
 .content[b-uwjohrdo2z] {
-    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-content[b-uwjohrdo2z] {
+  margin-top: 64px;
 }
 /* /Pages/Dashboard.razor.rz.scp.css */
 .dashboard[b-lgsmtgcejn] {

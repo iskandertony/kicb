@@ -1,0 +1,29 @@
+<MudAppBar Elevation="0" Color="Color.Default" Class="main-appbar">
+    <div class="appbar-bg">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Edge="Edge.Start" Disabled="true" Class="logo-placeholder" />
+
+        <MudSpacer />
+
+        <div class="lang-switch">
+            <span class="lang-item lang-active">ru</span>
+            <span class="lang-divider">/</span>
+            <span class="lang-item">en</span>
+        </div>
+
+
+        <MudIconButton Icon="@Icons.Material.Filled.NotificationsNone" Class="notif-btn" />
+
+        <MudIconButton Icon="@Icons.Material.Filled.Brightness7" Class="theme-btn" />
+
+      <MudMenu AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight">
+            <ActivatorContent>
+                <MudIconButton Icon="@Icons.Material.Filled.AccountCircle" Class="profile-btn" />
+            </ActivatorContent>
+            <ChildContent>
+                <MudMenuItem>Профиль</MudMenuItem>
+                <MudMenuItem>Настройки</MudMenuItem>
+                <MudMenuItem>Выйти</MudMenuItem>
+            </ChildContent>
+        </MudMenu>
+    </div>
+</MudAppBar>

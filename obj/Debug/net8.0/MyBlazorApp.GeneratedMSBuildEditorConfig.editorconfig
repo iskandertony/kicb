@@ -61,6 +61,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/mans/projects/Kicb/MyBlazorApp/Components/AppBar/AppBar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHBCYXIvQXBwQmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-k7kxtcavde
+
 [/Users/mans/projects/Kicb/MyBlazorApp/Components/Sidebar/Sidebar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaWRlYmFyL1NpZGViYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-opwouz2lp2

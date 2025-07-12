@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2TxRrv2AOwg4lZ7iAXukNGS47Kk7Qz3HiLTr7azNDPo=",
+  "Hash": "0HdoY9DQZ6wRqVHBekSXoEscS28CZ1iHqD3Cf5nOa6M=",
   "Source": "MyBlazorApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -7976,25 +7976,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/app.css"
-    },
-    {
-      "Identity": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/css/site.css",
-      "SourceId": "MyBlazorApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "css/site.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
       "Identity": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/favicon.png",

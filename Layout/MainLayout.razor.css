@@ -1,21 +1,16 @@
 .page {
     display: flex;
+    background: #f7f8fa;
     min-height: 100vh;
-    background: #f8f9fc;
 }
-.main-content {
-    flex: 1;
-    padding: 24px 0 0 0;
-    overflow-y: auto;
-}
-.top-row {
-    height: 64px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #e5e7eb;
-    margin-bottom: 20px;
-}
+
 .content {
-    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-content {
+  margin-top: 64px;
 }
