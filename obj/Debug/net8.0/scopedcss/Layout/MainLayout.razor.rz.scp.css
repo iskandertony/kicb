@@ -1,15 +1,14 @@
 .page[b-uwjohrdo2z] {
-    display: flex;
-    background: #f7f8fa;
-    min-height: 100vh;
+  display: flex;
+  background: #f7f8fa;
+  min-height: 100vh;
 }
 
 .content[b-uwjohrdo2z] {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 16px;
-    
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 16px;
 }
 
 .main-content[b-uwjohrdo2z] {
