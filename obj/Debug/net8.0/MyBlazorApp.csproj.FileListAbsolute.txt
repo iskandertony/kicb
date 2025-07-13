@@ -1049,3 +1049,5 @@
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/refint/MyBlazorApp.dll
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/MyBlazorApp.pdb
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/ref/MyBlazorApp.dll
+/Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/scopedcss/Components/AppBar/AppBarNav/AppBarNav.razor.rz.scp.css
+/Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/scopedcss/Components/AppBar/AppBarActions/AppBarActions.razor.rz.scp.css

@@ -69,6 +69,14 @@ build_metadata.AdditionalFiles.CssScope = b-w5ykolrnh3
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHBCYXIvQXBwQmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-k7kxtcavde
 
+[/Users/mans/projects/Kicb/MyBlazorApp/Components/AppBar/AppBarActions/AppBarActions.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHBCYXIvQXBwQmFyQWN0aW9ucy9BcHBCYXJBY3Rpb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-bconeas9m4
+
+[/Users/mans/projects/Kicb/MyBlazorApp/Components/AppBar/AppBarNav/AppBarNav.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHBCYXIvQXBwQmFyTmF2L0FwcEJhck5hdi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8a90j7t7j8
+
 [/Users/mans/projects/Kicb/MyBlazorApp/Components/DashBoardCharts/DashBoardCharts.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9EYXNoQm9hcmRDaGFydHMvRGFzaEJvYXJkQ2hhcnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-debeznhl2c

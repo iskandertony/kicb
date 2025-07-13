@@ -8,31 +8,10 @@
 }
 
 .main-appbar[b-k7kxtcavde] {
-  /* padding-right: 16px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-
-.main-appbar-nav[b-k7kxtcavde] {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-placeholder[b-k7kxtcavde] {
-  margin-right: 16px;
-  color: #1976d2;
-}
-
-.lang-switch[b-k7kxtcavde] {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #222;
-  margin-right: 16px;
 }
 
 .lang-item[b-k7kxtcavde] {

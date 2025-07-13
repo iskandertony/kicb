@@ -1,0 +1,39 @@
+@using MudBlazor
+
+<div class="main-appbar-nav">
+    <MudMenu AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight">
+        <ActivatorContent>
+            <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.NotificationsNone" Class="notif-btn" />
+        </ActivatorContent>
+        <ChildContent>
+            <MudMenuItem Disabled="true" Style="opacity:0.7;">
+                <MudText Typo="Typo.subtitle2" Align="Align.Center">
+                    <MudIcon Icon="@Icons.Material.Filled.NotificationsOff" Size="Size.Medium" Style="margin-right: 8px;" />
+                    Нет уведомлений
+                </MudText>
+            </MudMenuItem>
+        </ChildContent>
+    </MudMenu>
+
+    <MudSelect T="string" @bind-Value="_lang">
+        <MudSelectItem Value=@("ru")>ru</MudSelectItem>
+        <MudSelectItem Value=@("en")>en</MudSelectItem>
+    </MudSelect>
+
+    <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.DarkMode" Class="theme-btn" />
+
+    <MudMenu AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight">
+        <ActivatorContent>
+            <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.AccountCircle" Class="profile-btn" />
+        </ActivatorContent>
+        <ChildContent>
+            <MudMenuItem>Профиль</MudMenuItem>
+            <MudMenuItem>Настройки</MudMenuItem>
+            <MudMenuItem>Выйти</MudMenuItem>
+        </ChildContent>
+    </MudMenu>
+</div>
+
+@code {
+    private string _lang = "ru";
+}
