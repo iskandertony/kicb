@@ -1,6 +1,6 @@
-<MudPaper Class="bank-card" Elevation="0">
+<div Class="bank-card">
     <div class="bank-card-header">
-        <MudAvatar Icon="@Icons.Material.Filled.AccountBalance" Size="Size.Medium" Class="bank-avatar" />
+<MudIcon Icon="@Icons.Material.Filled.MonetizationOn" Size="Size.Large" Class="bank-avatar" />
         <div class="bank-card-title">@BankName</div>
     </div>
     <div class="bank-card-time-row">
@@ -9,6 +9,8 @@
         <span class="bank-card-thin" style="margin-left:14px;">Покупка</span>
         <span class="bank-card-thin" style="margin-left:18px;">Продажа</span>
     </div>
+    <MudDivider />
+
     @foreach (var currency in Currencies)
     {
         <div class="bank-card-currency-row">
@@ -19,7 +21,7 @@
             <span class="rate-cell">@currency.Sell</span>
         </div>
     }
-</MudPaper>
+</div>
 
 @code {
     [Parameter] public string BankName { get; set; }
