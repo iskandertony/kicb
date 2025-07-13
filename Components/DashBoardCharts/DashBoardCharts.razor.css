@@ -1,6 +1,7 @@
 .dashboard-charts {
     display: flex;
     gap: 24px;
+    padding: 20px;
 }
 .mud-paper-root.dashboard-chart * {
     display: none;

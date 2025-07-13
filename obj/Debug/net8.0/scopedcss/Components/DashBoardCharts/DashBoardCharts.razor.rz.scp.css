@@ -1,6 +1,7 @@
 .dashboard-charts[b-debeznhl2c] {
     display: flex;
     gap: 24px;
+    padding: 20px;
 }
 .mud-paper-root.dashboard-chart *[b-debeznhl2c] {
     display: none;
