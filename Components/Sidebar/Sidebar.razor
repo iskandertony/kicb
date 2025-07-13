@@ -1,9 +1,7 @@
 <div class="sidebar @(mini ? "mini" : "")">
     <div class="sidebar-header">
-        <MudIconButton Icon="@Icons.Material.Filled.Menu"
-                       Size="Size.Medium"
-                       OnClick="@ToggleMini"
-                       Class="sidebar-menu-btn" />
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Size="Size.Medium" OnClick="@ToggleMini"
+            Class="sidebar-menu-btn" />
         <span class="sidebar-title">Приложение Единое Окно</span>
     </div>
     <MudNavMenu Dense="true">
@@ -11,6 +9,7 @@
             <span class="label">Главная</span>
         </MudNavLink>
         <div class="divider"></div>
+
         <MudNavGroup Title="Налоги" Icon="@Icons.Material.Filled.Receipt" Class="nav-group">
             <MudNavLink Href="/taxes/declarations" Class="nav-link">
                 <span class="label">Декларации</span>
@@ -19,6 +18,7 @@
                 <span class="label">Отчёты</span>
             </MudNavLink>
         </MudNavGroup>
+        
         <div class="divider"></div>
         <MudNavGroup Title="Платёжный портал" Icon="@Icons.Material.Filled.Payment" Class="nav-group">
             <MudNavLink Href="/portal/invoices" Class="nav-link">
