@@ -4,15 +4,15 @@
   height: 60px;
   display: flex;
   align-items: center;
-   position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .main-appbar[b-k7kxtcavde] {
-  background: #f7f8fa;
+  background: var(--mud-palette-background);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -28,7 +28,7 @@
 
 .lang-active[b-k7kxtcavde] {
   opacity: 1;
-  color: #1976d2;
+  color: var(--mud-palette-primary); 
   cursor: default;
 }
 

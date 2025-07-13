@@ -1,6 +1,6 @@
 .page[b-uwjohrdo2z] {
   display: flex;
-  background: #f7f8fa;
+  background: var(--mud-palette-background);
   min-height: 100vh;
 }
 
@@ -12,5 +12,8 @@
 }
 
 .main-content[b-uwjohrdo2z] {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   margin-top: 64px;
 }

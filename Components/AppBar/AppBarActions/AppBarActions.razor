@@ -1,4 +1,5 @@
 @using MudBlazor
+@using Microsoft.AspNetCore.Components
 
 <div class="main-appbar-nav">
     <MudMenu AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight">
@@ -8,19 +9,22 @@
         <ChildContent>
             <MudMenuItem Disabled="true" Style="opacity:0.7;">
                 <MudText Typo="Typo.subtitle2" Align="Align.Center">
-                    <MudIcon Icon="@Icons.Material.Filled.NotificationsOff" Size="Size.Medium" Style="margin-right: 8px;" />
+                    <MudIcon Icon="@Icons.Material.Filled.NotificationsOff" Size="Size.Medium"
+                        Style="margin-right: 8px;" />
                     Нет уведомлений
                 </MudText>
             </MudMenuItem>
         </ChildContent>
     </MudMenu>
 
-    <MudSelect T="string" @bind-Value="_lang">
+    <MudSelect T="string" @bind-Value="_lang" Class="mx-2">
         <MudSelectItem Value=@("ru")>ru</MudSelectItem>
         <MudSelectItem Value=@("en")>en</MudSelectItem>
     </MudSelect>
 
-    <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.DarkMode" Class="theme-btn" />
+    <MudIconButton Size="Size.Large"
+        Icon="@(IsDarkMode ? Icons.Material.Filled.DarkMode : Icons.Material.Filled.LightMode)" Class="theme-btn"
+        OnClick="OnThemeToggleClick" Title="@(IsDarkMode ? "Тёмная тема" : "Светлая тема")" />
 
     <MudMenu AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight">
         <ActivatorContent>
@@ -35,5 +39,14 @@
 </div>
 
 @code {
+    [Parameter] public bool IsDarkMode { get; set; }
+    [Parameter] public EventCallback OnThemeToggle { get; set; }
+
     private string _lang = "ru";
+
+    private async Task OnThemeToggleClick()
+    {
+        if (OnThemeToggle.HasDelegate)
+            await OnThemeToggle.InvokeAsync();
+    }
 }

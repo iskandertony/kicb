@@ -1,7 +1,8 @@
-<div class="appbar-bg">
-    <MudAppBar Elevation="0" Color="Color.Default">
-        <div class="main-appbar">
-            <AppBarActions />
-        </div>
-    </MudAppBar>
+<div class="main-appbar">
+    <AppBarActions IsDarkMode="IsDarkMode" OnThemeToggle="OnThemeToggle" />
 </div>
+
+@code {
+    [Parameter] public bool IsDarkMode { get; set; }
+    [Parameter] public EventCallback OnThemeToggle { get; set; }
+}
