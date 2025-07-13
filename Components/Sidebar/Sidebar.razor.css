@@ -13,7 +13,7 @@
   --mud-palette-primary: #fff !important;
 }
 .sidebar.mini {
-  max-width: 48px;
+  max-width: 56px;
   transition: max-width 0.18s;
 }
 .sidebar-header {
@@ -24,18 +24,12 @@
 .sidebar.mini .sidebar-title {
   display: none;
 }
-.sidebar.mini .sidebar-app-icon {
-  margin-left: 3px;
-}
 .sidebar-title {
   font-size: 12px;
   white-space: nowrap;
 }
 .sidebar-menu-btn {
   color: #b0bac9;
-}
-.sidebar-app-icon {
-  color: #fff;
 }
 .nav-link {
   width: 100%;

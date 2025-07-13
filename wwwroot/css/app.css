@@ -87,3 +87,24 @@ h1:focus {
 .mud-carousel .mud-carousel-default .bank-cards-carousel {
     height: 300px;
 }
+
+.mud-icon-root {
+  width: 24px !important;   /* или нужный размер, например, 28px */
+  height: 24px !important;
+  font-size: 24px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mud-icon-button.sidebar-menu-btn {
+  padding: 16px;
+}
+
+.sidebar.mini .mud-nav-link-text {
+  display: none !important;
+}
+
+.sidebar.mini .mud-nav-link-expand-icon {
+  display: none !important;
+}

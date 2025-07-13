@@ -13,7 +13,7 @@
   --mud-palette-primary: #fff !important;
 }
 .sidebar.mini[b-opwouz2lp2] {
-  max-width: 48px;
+  max-width: 56px;
   transition: max-width 0.18s;
 }
 .sidebar-header[b-opwouz2lp2] {
@@ -24,18 +24,12 @@
 .sidebar.mini .sidebar-title[b-opwouz2lp2] {
   display: none;
 }
-.sidebar.mini .sidebar-app-icon[b-opwouz2lp2] {
-  margin-left: 3px;
-}
 .sidebar-title[b-opwouz2lp2] {
   font-size: 12px;
   white-space: nowrap;
 }
 .sidebar-menu-btn[b-opwouz2lp2] {
   color: #b0bac9;
-}
-.sidebar-app-icon[b-opwouz2lp2] {
-  color: #fff;
 }
 .nav-link[b-opwouz2lp2] {
   width: 100%;
