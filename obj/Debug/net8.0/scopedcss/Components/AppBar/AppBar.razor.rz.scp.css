@@ -5,11 +5,17 @@
   display: flex;
   align-items: center;
   backdrop-filter: blur(16px);
+   position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .main-appbar[b-k7kxtcavde] {
+  background: #f7f8fa;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
 }

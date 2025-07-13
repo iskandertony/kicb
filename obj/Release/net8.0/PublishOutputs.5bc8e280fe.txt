@@ -1,1 +1,0 @@
-/Users/mans/projects/Kicb/MyBlazorApp/dist/web.config

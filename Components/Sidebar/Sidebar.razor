@@ -1,30 +1,37 @@
 @using MudBlazor
 
-<div class="sidebar">
+<div class="sidebar @(mini ? "mini" : "")">
+    <div class="sidebar-header">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu"
+                       Size="Size.Medium"
+                       OnClick="@ToggleMini"
+                       Class="sidebar-menu-btn" />
+        <span class="sidebar-title">Приложение Единое Окно</span>
+    </div>
     <MudNavMenu Dense="true">
         <MudNavLink Href="/" Icon="@Icons.Material.Filled.Home" Match="NavLinkMatch.All" Class="nav-link">
             <span class="label">Главная</span>
         </MudNavLink>
-
         <div class="divider"></div>
-
-        <MudNavGroup Title="Налоги" Icon="@Icons.Material.Filled.Receipt" ExpandIconColor="Color.White" Class="nav-group">
+        <MudNavGroup Title="Налоги" Icon="@Icons.Material.Filled.Receipt" Class="nav-group">
             <MudNavLink Href="/taxes/declarations" Class="nav-link">Декларации</MudNavLink>
             <MudNavLink Href="/taxes/reports" Class="nav-link">Отчёты</MudNavLink>
         </MudNavGroup>
-
         <div class="divider"></div>
-
-        <MudNavGroup Title="Платёжный портал" Icon="@Icons.Material.Filled.Payment" ExpandIconColor="Color.White" Class="nav-group">
+        <MudNavGroup Title="Платёжный портал" Icon="@Icons.Material.Filled.Payment" Class="nav-group">
             <MudNavLink Href="/portal/invoices" Class="nav-link">Счета</MudNavLink>
             <MudNavLink Href="/portal/history" Class="nav-link">История</MudNavLink>
         </MudNavGroup>
-
         <div class="divider"></div>
-
-        <MudNavGroup Title="Социальный фонд" Icon="@Icons.Material.Filled.AccountBalance" ExpandIconColor="Color.White" Class="nav-group">
+        <MudNavGroup Title="Социальный фонд" Icon="@Icons.Material.Filled.AccountBalance" Class="nav-group">
             <MudNavLink Href="/fund/payments" Class="nav-link">Платежи</MudNavLink>
             <MudNavLink Href="/fund/statements" Class="nav-link">Выписки</MudNavLink>
         </MudNavGroup>
     </MudNavMenu>
 </div>
+
+@code {
+    private bool mini = false;
+
+    void ToggleMini() => mini = !mini;
+}
