@@ -1,54 +1,82 @@
 /* /Components/ BankCard/BankCard.razor.rz.scp.css */
 .bank-card[b-w5ykolrnh3] {
-    background: #fff;
+    background: #f6f7fb;
     border-radius: 18px;
-    box-shadow: 0 4px 16px 0 rgba(44,62,80,0.07);
-    padding: 20px 18px 18px 18px;
-    min-width: 240px;
-    max-width: 270px;
+    box-shadow: none;
+    padding: 18px 20px 18px 20px;
+    min-width: 220px;
+    max-width: 250px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    gap: 9px;
 }
 
 .bank-card-header[b-w5ykolrnh3] {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
+    gap: 9px;
+    margin-bottom: 6px;
 }
 
-.bank-card-logo[b-w5ykolrnh3] {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    object-fit: cover;
-    background: #f0f2f5;
-    box-shadow: 0 2px 6px 0 rgba(44,62,80,0.08);
+.bank-avatar[b-w5ykolrnh3] {
+    background: #fff;
+    color: #c41a1a;
+    border: 1.5px solid #e6e6e6;
 }
 
 .bank-card-title[b-w5ykolrnh3] {
     font-weight: 600;
-    font-size: 1.1rem;
-    color: #20232a;
+    font-size: 1.09rem;
+    color: #2a2a2a;
 }
 
-.bank-card-content[b-w5ykolrnh3] {
+.bank-card-time-row[b-w5ykolrnh3] {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    align-items: center;
+    font-size: 0.93rem;
+    color: #9ca3af;
+    margin-bottom: 5px;
+    gap: 0;
 }
 
-.bank-card-row[b-w5ykolrnh3] {
+.bank-time-icon[b-w5ykolrnh3] {
+    margin-right: 3px;
+}
+
+.bank-card-time[b-w5ykolrnh3] {
+    font-size: 0.97rem;
+    color: #838383;
+    margin-right: 7px;
+}
+
+.bank-card-thin[b-w5ykolrnh3] {
+    font-size: 0.92rem;
+    color: #b0b0b0;
+    letter-spacing: 0.01em;
+}
+
+.bank-card-currency-row[b-w5ykolrnh3] {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    padding: 2px 0;
     font-size: 0.97rem;
 }
 
-.bank-card-btn[b-w5ykolrnh3] {
-    margin-top: 12px;
-    align-self: flex-end;
+.currency-cell[b-w5ykolrnh3] {
+    display: flex;
+    align-items: center;
+    min-width: 80px;
+    gap: 5px;
+    font-weight: 500;
+    color: #252525;
+}
+
+.rate-cell[b-w5ykolrnh3] {
+    min-width: 43px;
+    text-align: left;
+    color: #313131;
+    font-variant-numeric: tabular-nums;
 }
 /* /Components/AppBar/AppBar.razor.rz.scp.css */
 .appbar-bg[b-k7kxtcavde] {

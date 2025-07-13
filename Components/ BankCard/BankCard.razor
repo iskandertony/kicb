@@ -1,32 +1,36 @@
-<div class="bank-card">
+<MudPaper Class="bank-card" Elevation="0">
     <div class="bank-card-header">
-        <img src="@LogoUrl" alt="@BankName" class="bank-card-logo" />
+        <MudAvatar Icon="@Icons.Material.Filled.AccountBalance" Size="Size.Medium" Class="bank-avatar" />
         <div class="bank-card-title">@BankName</div>
     </div>
-    <div class="bank-card-content">
-        <div class="bank-card-row">
-            <span>Валюта:</span>
-            <span>@Currency</span>
-        </div>
-        <div class="bank-card-row">
-            <span>Курс:</span>
-            <span>@Rate</span>
-        </div>
-        @if (!string.IsNullOrWhiteSpace(Balance))
-        {
-            <div class="bank-card-row">
-                <span>Баланс:</span>
-                <span>@Balance</span>
-            </div>
-        }
+    <div class="bank-card-time-row">
+        <MudIcon Icon="@Icons.Material.Filled.AccessTime" Size="Size.Small" Class="bank-time-icon" />
+        <span class="bank-card-time">@Time</span>
+        <span class="bank-card-thin" style="margin-left:14px;">Покупка</span>
+        <span class="bank-card-thin" style="margin-left:18px;">Продажа</span>
     </div>
-    <MudButton Variant="Variant.Text" Size="Size.Small" Class="bank-card-btn">Подробнее</MudButton>
-</div>
+    @foreach (var currency in Currencies)
+    {
+        <div class="bank-card-currency-row">
+            <span class="currency-cell">
+                <MudAvatar Image="@currency.FlagUrl" Size="Size.Small" /> @currency.Code
+            </span>
+            <span class="rate-cell">@currency.Buy</span>
+            <span class="rate-cell">@currency.Sell</span>
+        </div>
+    }
+</MudPaper>
 
 @code {
     [Parameter] public string BankName { get; set; }
-    [Parameter] public string LogoUrl { get; set; }
-    [Parameter] public string Currency { get; set; }
-    [Parameter] public string Rate { get; set; }
-    [Parameter] public string Balance { get; set; }
+    [Parameter] public string Time { get; set; }
+    [Parameter] public List<CurrencyInfo> Currencies { get; set; }
+
+    public class CurrencyInfo
+    {
+        public string FlagUrl { get; set; }
+        public string Code { get; set; }
+        public string Buy { get; set; }
+        public string Sell { get; set; }
+    }
 }

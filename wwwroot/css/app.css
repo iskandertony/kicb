@@ -102,9 +102,7 @@ code {
     padding: 0 !important;
 }
 
-.mud-popover,
-.mud-popover .mud-paper,
-.mud-paper {
+.mud-popover {
     background: #fff !important;
     backdrop-filter: none !important;
     color: #222 !important;
