@@ -108,3 +108,7 @@ code {
     color: #222 !important;
     box-shadow: 0 2px 16px 0 rgba(40,40,60,0.10) !important;
 }
+
+.mud-carousel .mud-carousel-default .bank-cards-carousel {
+    height: 300px;
+}

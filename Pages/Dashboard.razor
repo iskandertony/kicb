@@ -1,33 +1,45 @@
 @page "/"
 
 <DashBoardCharts />
-<div style="display: flex; gap: 24px;">
-    <BankCard BankName="Demir Bank" Time="18:08" Currencies="demirCurrencies" />
-    <BankCard BankName="KICB" Time="18:09" Currencies="kicbCurrencies" />
-    <BankCard BankName="Optima" Time="18:12" Currencies="optimaCurrencies" />
-</div>
 
+<MudCarousel TData="RenderFragment" Style="height:300px;" ShowArrows="true" ShowBullets="false" AutoCycle="false"
+    Class="bank-cards-carousel">
+    <MudCarouselItem>
+        <div style="display: flex; gap: 24px;">
+            <BankCard BankName="Demir Bank" Time="18:08" Currencies="demirCurrencies" />
+            <BankCard BankName="KICB" Time="18:09" Currencies="kicbCurrencies" />
+            <BankCard BankName="Optima" Time="18:12" Currencies="optimaCurrencies" />
+        </div>
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <BankCard BankName="KICB" Time="18:09" Currencies="kicbCurrencies" />
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <BankCard BankName="Optima" Time="18:12" Currencies="optimaCurrencies" />
+    </MudCarouselItem>
+
+</MudCarousel>
 
 @code {
     List<BankCard.CurrencyInfo> demirCurrencies = new()
-    {
-        new() { FlagUrl="https://flagcdn.com/us.svg", Code="USD", Buy="89.6", Sell="90.3" },
-        new() { FlagUrl="https://flagcdn.com/eu.svg", Code="EUR", Buy="97.9", Sell="98.6" },
-        new() { FlagUrl="https://flagcdn.com/ru.svg", Code="RUB", Buy="1.16", Sell="1.21" },
-        new() { FlagUrl="https://flagcdn.com/kz.svg", Code="KZT", Buy="0.20", Sell="0.22" },
-    };
+{
+new() { FlagUrl="https://flagcdn.com/us.svg", Code="USD", Buy="89.6", Sell="90.3" },
+new() { FlagUrl="https://flagcdn.com/eu.svg", Code="EUR", Buy="97.9", Sell="98.6" },
+new() { FlagUrl="https://flagcdn.com/ru.svg", Code="RUB", Buy="1.16", Sell="1.21" },
+new() { FlagUrl="https://flagcdn.com/kz.svg", Code="KZT", Buy="0.20", Sell="0.22" },
+};
     List<BankCard.CurrencyInfo> kicbCurrencies = new()
-    {
-        new() { FlagUrl="https://flagcdn.com/us.svg", Code="USD", Buy="89.9", Sell="90.5" },
-        new() { FlagUrl="https://flagcdn.com/eu.svg", Code="EUR", Buy="98.3", Sell="99.1" },
-        new() { FlagUrl="https://flagcdn.com/ru.svg", Code="RUB", Buy="1.18", Sell="1.23" },
-        new() { FlagUrl="https://flagcdn.com/kz.svg", Code="KZT", Buy="0.21", Sell="0.23" },
-    };
+{
+new() { FlagUrl="https://flagcdn.com/us.svg", Code="USD", Buy="89.9", Sell="90.5" },
+new() { FlagUrl="https://flagcdn.com/eu.svg", Code="EUR", Buy="98.3", Sell="99.1" },
+new() { FlagUrl="https://flagcdn.com/ru.svg", Code="RUB", Buy="1.18", Sell="1.23" },
+new() { FlagUrl="https://flagcdn.com/kz.svg", Code="KZT", Buy="0.21", Sell="0.23" },
+};
     List<BankCard.CurrencyInfo> optimaCurrencies = new()
-    {
-        new() { FlagUrl="https://flagcdn.com/us.svg", Code="USD", Buy="89.7", Sell="90.4" },
-        new() { FlagUrl="https://flagcdn.com/eu.svg", Code="EUR", Buy="98.0", Sell="98.8" },
-        new() { FlagUrl="https://flagcdn.com/ru.svg", Code="RUB", Buy="1.17", Sell="1.22" },
-        new() { FlagUrl="https://flagcdn.com/kz.svg", Code="KZT", Buy="0.19", Sell="0.21" },
-    };
+{
+new() { FlagUrl="https://flagcdn.com/us.svg", Code="USD", Buy="89.7", Sell="90.4" },
+new() { FlagUrl="https://flagcdn.com/eu.svg", Code="EUR", Buy="98.0", Sell="98.8" },
+new() { FlagUrl="https://flagcdn.com/ru.svg", Code="RUB", Buy="1.17", Sell="1.22" },
+new() { FlagUrl="https://flagcdn.com/kz.svg", Code="KZT", Buy="0.19", Sell="0.21" },
+};
 }
