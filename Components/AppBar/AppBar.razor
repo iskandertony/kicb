@@ -3,26 +3,37 @@
         <div class="main-appbar">
 
             <div class="main-appbar-nav">
-                <MudIconButton Icon="@Icons.Material.Filled.Menu" Edge="Edge.Start" Disabled="true"
+                <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.Menu" Edge="Edge.Start" Disabled="true"
                     Class="logo-placeholder" />
                 <div>Приложение единое окно</div>
             </div>
 
             <div class="main-appbar-nav">
-                <div class="lang-switch">
-                    <span class="lang-item lang-active">ru</span>
-                    <span class="lang-divider">/</span>
-                    <span class="lang-item">en</span>
-                </div>
+                <MudMenu AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight">
+                    <ActivatorContent>
+                        <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.NotificationsNone" Class="notif-btn" />
+                    </ActivatorContent>
+                    <ChildContent>
+                        <MudMenuItem Disabled="true" Style="opacity:0.7;">
+                            <MudText Typo="Typo.subtitle2" Align="Align.Center">
+                                <MudIcon Icon="@Icons.Material.Filled.NotificationsOff" Size="Size.Medium"
+                                    Style="margin-right: 8px;" />
+                                Нет уведомлений
+                            </MudText>
+                        </MudMenuItem>
+                    </ChildContent>
+                </MudMenu>
 
+                <MudSelect T="string" @bind-Value="_lang">
+                    <MudSelectItem Value="@("ru")">ru</MudSelectItem>
+                    <MudSelectItem Value="@("en")">en</MudSelectItem>
+                </MudSelect>
 
-                <MudIconButton Icon="@Icons.Material.Filled.NotificationsNone" Class="notif-btn" />
-
-                <MudIconButton Icon="@Icons.Material.Filled.Brightness7" Class="theme-btn" />
+                <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.DarkMode" Class="theme-btn" />
 
                 <MudMenu AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight">
                     <ActivatorContent>
-                        <MudIconButton Icon="@Icons.Material.Filled.AccountCircle" Class="profile-btn" />
+                        <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.AccountCircle" Class="profile-btn" />
                     </ActivatorContent>
                     <ChildContent>
                         <MudMenuItem>Профиль</MudMenuItem>
@@ -34,3 +45,5 @@
         </div>
     </MudAppBar>
 </div>
+
+@code { private string _lang = "ru"; }

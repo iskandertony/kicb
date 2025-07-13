@@ -104,8 +104,7 @@ code {
 
 .mud-popover,
 .mud-popover .mud-paper,
-.mud-menu,
-.mud-menu .mud-paper {
+.mud-paper {
     background: #fff !important;
     backdrop-filter: none !important;
     color: #222 !important;
