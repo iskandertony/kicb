@@ -1,0 +1,5 @@
+/Users/mans/projects/Kicb/MyBlazorApp/Publish/dist/web.config
+/Users/mans/projects/Kicb/MyBlazorApp/Publish/dist/wwwroot/sample-data/weather.json
+/Users/mans/projects/Kicb/MyBlazorApp/Publish/dist/wwwroot/_framework/blazor.boot.json
+/Users/mans/projects/Kicb/MyBlazorApp/Publish/vercel.json
+/Users/mans/projects/Kicb/MyBlazorApp/Publish/web.config
