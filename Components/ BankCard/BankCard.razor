@@ -1,0 +1,32 @@
+<div class="bank-card">
+    <div class="bank-card-header">
+        <img src="@LogoUrl" alt="@BankName" class="bank-card-logo" />
+        <div class="bank-card-title">@BankName</div>
+    </div>
+    <div class="bank-card-content">
+        <div class="bank-card-row">
+            <span>Валюта:</span>
+            <span>@Currency</span>
+        </div>
+        <div class="bank-card-row">
+            <span>Курс:</span>
+            <span>@Rate</span>
+        </div>
+        @if (!string.IsNullOrWhiteSpace(Balance))
+        {
+            <div class="bank-card-row">
+                <span>Баланс:</span>
+                <span>@Balance</span>
+            </div>
+        }
+    </div>
+    <MudButton Variant="Variant.Text" Size="Size.Small" Class="bank-card-btn">Подробнее</MudButton>
+</div>
+
+@code {
+    [Parameter] public string BankName { get; set; }
+    [Parameter] public string LogoUrl { get; set; }
+    [Parameter] public string Currency { get; set; }
+    [Parameter] public string Rate { get; set; }
+    [Parameter] public string Balance { get; set; }
+}

@@ -1,3 +1,55 @@
+/* /Components/ BankCard/BankCard.razor.rz.scp.css */
+.bank-card[b-w5ykolrnh3] {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px 0 rgba(44,62,80,0.07);
+    padding: 20px 18px 18px 18px;
+    min-width: 240px;
+    max-width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.bank-card-header[b-w5ykolrnh3] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.bank-card-logo[b-w5ykolrnh3] {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #f0f2f5;
+    box-shadow: 0 2px 6px 0 rgba(44,62,80,0.08);
+}
+
+.bank-card-title[b-w5ykolrnh3] {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #20232a;
+}
+
+.bank-card-content[b-w5ykolrnh3] {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bank-card-row[b-w5ykolrnh3] {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.97rem;
+}
+
+.bank-card-btn[b-w5ykolrnh3] {
+    margin-top: 12px;
+    align-self: flex-end;
+}
 /* /Components/AppBar/AppBar.razor.rz.scp.css */
 .appbar-bg[b-k7kxtcavde] {
   width: 100%;
@@ -6,11 +58,10 @@
   display: flex;
   align-items: center;
   backdrop-filter: blur(16px);
-  /* border-bottom: 1px solid #323f45; */
 }
 
 .main-appbar[b-k7kxtcavde] {
-  padding: 0 16px;
+  /* padding-right: 16px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,6 +110,26 @@
 .theme-btn[b-k7kxtcavde],
 .profile-btn[b-k7kxtcavde] {
   margin-left: 8px;
+}
+/* /Components/DashBoardCharts/DashBoardCharts.razor.rz.scp.css */
+.dashboard-charts[b-debeznhl2c] {
+    display: flex;
+    gap: 24px;
+}
+.mud-paper-root.dashboard-chart *[b-debeznhl2c] {
+    display: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px 0 #ececec;
+    padding: 24px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chart-title[b-debeznhl2c] {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 /* /Components/Sidebar/Sidebar.razor.rz.scp.css */
 .sidebar[b-opwouz2lp2] {
@@ -131,13 +202,36 @@
     flex-direction: column;
     height: 100vh;
     width: 100%;
+    padding: 0 16px;
 }
 
 .main-content[b-uwjohrdo2z] {
-  margin-top: 64px;
+  margin-top: 16px;
 }
 /* /Pages/Dashboard.razor.rz.scp.css */
-.dashboard[b-lgsmtgcejn] {
-  padding: 24px;
-  background-color: #f8f9fc;
+.dashboard-charts[b-lgsmtgcejn] {
+    display: flex;
+    gap: 24px;
+}
+.mud-paper-root.dashboard-chart *[b-lgsmtgcejn] {
+    display: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px 0 #ececec;
+    padding: 24px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chart-title[b-lgsmtgcejn] {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.bank-cards-list[b-lgsmtgcejn] {
+    display: flex;
+    gap: 24px;
+    margin-top: 18px;
+    overflow-x: auto;
+    padding-bottom: 12px;
 }

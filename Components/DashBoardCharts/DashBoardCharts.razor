@@ -1,0 +1,31 @@
+<div class="dashboard-charts">
+    <MudPaper Class="dashboard-chart">
+        <div class="chart-title">Кредиты и Депозиты</div>
+        <MudChart ChartType="ChartType.Line" ChartSeries="@_series1" XAxisLabels="@_labels1" Height="280px" />
+    </MudPaper>
+    <MudPaper Class="dashboard-chart">
+        <div class="chart-title">Распределение клиентов по типам</div>
+        <MudChart ChartType="ChartType.Line" ChartSeries="@_series2" XAxisLabels="@_labels2" Height="280px" />
+    </MudPaper>
+    <MudPaper Class="dashboard-chart">
+        <div class="chart-title">Количество клиентов по регионам</div>
+        <MudChart ChartType="ChartType.Pie" InputData="@regionData" InputLabels="@regionLabels" Height="280px" />
+    </MudPaper>
+</div>
+
+@code {
+    private List<ChartSeries> _series1 = new()
+{
+new ChartSeries() { Name = "Кредиты", Data = new double[] { 80000, 90000, 100000, 95000, 110000 } },
+new ChartSeries() { Name = "Депозиты", Data = new double[] { 20000, 21000, 23000, 25000, 30000 } }
+};
+    private string[] _labels1 = { "2020", "2021", "2022", "2023", "2024" };
+    private List<ChartSeries> _series2 = new()
+{
+new ChartSeries() { Name = "Юридические лица", Data = new double[] { 0, 0, 0, 0, 0, 0 } },
+new ChartSeries() { Name = "Физические лица", Data = new double[] { 300000, 350000, 400000, 450000, 500000, 420000 } }
+};
+    private string[] _labels2 = { "2019", "2020", "2021", "2022", "2023", "2024" };
+    private double[] regionData = { 400000, 110000, 95000, 70000, 30000, 25000, 240000 };
+    private string[] regionLabels = { "Чуй", "Ош", "Жалал-Абад", "Баткен", "Нарын", "Талас", "Иссык-Куль" };
+}

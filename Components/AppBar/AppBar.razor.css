@@ -5,11 +5,10 @@
   display: flex;
   align-items: center;
   backdrop-filter: blur(16px);
-  /* border-bottom: 1px solid #323f45; */
 }
 
 .main-appbar {
-  padding: 0 16px;
+  /* padding-right: 16px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
