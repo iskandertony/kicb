@@ -87,6 +87,13 @@ h1:focus {
   height: 300px;
 }
 
+@media (min-width: 1500px) {
+  .mud-carousel .mud-carousel-default .bank-cards-carousel {
+    max-width: 1654px !important;
+    width: 100% !important;
+  }
+}
+
 .mud-icon-root {
   width: 24px !important;
   height: 24px !important;

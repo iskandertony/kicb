@@ -17,3 +17,9 @@
   gap: 32px;
   margin-top: 64px;
 }
+
+@media (min-width: 1500px) {
+  .main-content[b-uwjohrdo2z] {
+    align-items: center;
+  }
+}

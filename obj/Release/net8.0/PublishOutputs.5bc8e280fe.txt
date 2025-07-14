@@ -1,7 +1,0 @@
-/Users/mans/projects/Kicb/MyBlazorApp/dist/vercel.json
-/Users/mans/projects/Kicb/MyBlazorApp/dist/Publish/web.config
-/Users/mans/projects/Kicb/MyBlazorApp/dist/Publish/dist/wwwroot/sample-data/weather.json
-/Users/mans/projects/Kicb/MyBlazorApp/dist/Publish/dist/wwwroot/_framework/blazor.boot.json
-/Users/mans/projects/Kicb/MyBlazorApp/dist/Publish/vercel.json
-/Users/mans/projects/Kicb/MyBlazorApp/dist/Publish/wwwroot/kicb/_framework/blazor.boot.json
-/Users/mans/projects/Kicb/MyBlazorApp/dist/web.config

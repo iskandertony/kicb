@@ -412,7 +412,14 @@
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/wwwroot/_framework/System.Net.Requests.wasm.gz
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/wwwroot/_framework/Microsoft.AspNetCore.Components.wasm.gz
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json.gz
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/dist/web.config
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/web.config
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/dist/Publish/dist/wwwroot/sample-data/weather.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/dist/Publish/dist/wwwroot/_framework/blazor.boot.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/dist/Publish/vercel.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/dist/Publish/wwwroot/kicb/_framework/blazor.boot.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/dist/vercel.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/dist/wwwroot/_framework/blazor.boot.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/dist/wwwroot/sample-data/weather.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/dist/wwwroot/_framework/blazor.boot.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/vercel.json
