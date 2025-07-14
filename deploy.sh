@@ -1,14 +1,14 @@
-#!/bin/bash
-
-# Настройки
 REPO_NAME="kicb"
 BRANCH_NAME="gh-pages"
 BUILD_DIR="dist"
 DEPLOY_DIR="deploy-temp"
 STATIC_PATH="/$REPO_NAME"
 
+echo "🧹 Удаляем старый dist..."
+rm -rf dist
+
 echo "📦 Публикация проекта с base path $STATIC_PATH..."
-dotnet publish -c Release -o $BUILD_DIR /p:StaticWebAssetBasePath=$STATIC_PATH
+dotnet publish -c Release -o $BUILD_DIR
 
 if [ $? -ne 0 ]; then
   echo "❌ Ошибка при публикации. Скрипт остановлен."
@@ -24,7 +24,7 @@ echo "🧹 Очищаем старое содержимое ветки $BRANCH_N
 rm -rf $DEPLOY_DIR/*
 
 echo "📂 Копируем новые файлы..."
-cp -r $BUILD_DIR/wwwroot/* $DEPLOY_DIR/
+cp -a $BUILD_DIR/wwwroot/. $DEPLOY_DIR/
 
 touch $DEPLOY_DIR/.nojekyll
 
