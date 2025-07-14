@@ -1063,3 +1063,7 @@
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/dist/wwwroot/_framework/blazor.boot.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/vercel.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/wwwroot/_framework/blazor.boot.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/Publish/dist/wwwroot/sample-data/weather.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/Publish/dist/wwwroot/_framework/blazor.boot.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/Publish/vercel.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/Publish/wwwroot/_framework/blazor.boot.json
