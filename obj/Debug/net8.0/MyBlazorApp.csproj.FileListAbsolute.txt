@@ -419,7 +419,6 @@
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/dist/wwwroot/sample-data/weather.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/dist/wwwroot/_framework/blazor.boot.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/vercel.json
-/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/wwwroot/sample-data/weather.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/wwwroot/_framework/blazor.boot.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/vercel.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/MyBlazorApp.staticwebassets.runtime.json
@@ -1060,8 +1059,3 @@
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/refint/MyBlazorApp.dll
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/MyBlazorApp.pdb
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Debug/net8.0/ref/MyBlazorApp.dll
-/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/dist/wwwroot/sample-data/weather.json
-/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/dist/wwwroot/_framework/blazor.boot.json
-/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/vercel.json
-/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/wwwroot/sample-data/weather.json
-/Users/mans/projects/Kicb/MyBlazorApp/bin/Debug/net8.0/Publish/Publish/wwwroot/_framework/blazor.boot.json
