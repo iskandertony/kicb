@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "Pc6ufwc00Ta9THSZzveUBMfeamVuuEpAU4Gkh3x0jjc=",
+  "Hash": "UwiOpseEUFY63xGxIfEdVVgmsp//up0ZitCEiU2pzOw=",
   "Source": "MyBlazorApp",
-  "BasePath": "kicb",
+  "BasePath": "/kicb",
   "Mode": "Root",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
@@ -11,7 +11,7 @@
       "Name": "MyBlazorApp/wwwroot",
       "Source": "MyBlazorApp",
       "ContentRoot": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/",
-      "BasePath": "kicb",
+      "BasePath": "/kicb",
       "Pattern": "**"
     }
   ],
