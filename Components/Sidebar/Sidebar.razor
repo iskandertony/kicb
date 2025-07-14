@@ -1,40 +1,50 @@
+@inject NavigationManager NavigationManager
+
 <div class="sidebar @(mini ? "mini" : "")">
     <div class="sidebar-header">
-        <MudIconButton Icon="@Icons.Material.Filled.Menu" Size="Size.Medium" OnClick="@ToggleMini"
-            Class="sidebar-menu-btn" Color="Color.Inherit" Style="color: white;" />
-
+        <MudIconButton Icon="@Icons.Material.Filled.Menu"
+                       Size="Size.Medium"
+                       OnClick="@ToggleMini"
+                       Class="sidebar-menu-btn"
+                       Color="Color.Inherit"
+                       Style="color: white;" />
         <span class="sidebar-title">Приложение Единое Окно</span>
     </div>
+
     <MudNavMenu Dense="true">
-        <MudNavLink Href="/" Icon="@Icons.Material.Filled.Home" Match="NavLinkMatch.All" Class="nav-link">
+        <MudNavLink Href="@To("")" Icon="@Icons.Material.Filled.Home" Match="NavLinkMatch.All" Class="nav-link">
             <span class="label">Главная</span>
         </MudNavLink>
+
         <div class="divider"></div>
 
         <MudNavGroup Title="Налоги" Icon="@Icons.Material.Filled.Receipt" Class="nav-group">
-            <MudNavLink Href="/taxes/declarations" Class="nav-link">
+            <MudNavLink Href="@To("taxes/declarations")" Class="nav-link">
                 <span class="label">Декларации</span>
             </MudNavLink>
-            <MudNavLink Href="/taxes/reports" Class="nav-link">
+            <MudNavLink Href="@To("taxes/reports")" Class="nav-link">
                 <span class="label">Отчёты</span>
             </MudNavLink>
         </MudNavGroup>
 
         <div class="divider"></div>
+
         <MudNavGroup Title="Платёжный портал" Icon="@Icons.Material.Filled.Payment" Class="nav-group">
-            <MudNavLink Href="/portal/invoices" Class="nav-link">
+            <MudNavLink Href="@To("portal/invoices")" Class="nav-link">
                 <span class="label">Счета</span>
             </MudNavLink>
-            <MudNavLink Href="/portal/history" Class="nav-link">
+            <MudNavLink Href="@To("portal/history")" Class="nav-link">
                 <span class="label">История</span>
             </MudNavLink>
         </MudNavGroup>
+
         <div class="divider"></div>
+
         <MudNavGroup Title="Социальный фонд" Icon="@Icons.Material.Filled.AccountBalance" Class="nav-group">
-            <MudNavLink Href="/fund/payments" Class="nav-link">
+            <MudNavLink Href="@To("fund/payments")" Class="nav-link">
                 <span class="label">Платежи</span>
             </MudNavLink>
-            <MudNavLink Href="/fund/statements" Class="nav-link">
+            <MudNavLink Href="@To("fund/statements")" Class="nav-link">
                 <span class="label">Выписки</span>
             </MudNavLink>
         </MudNavGroup>
@@ -43,5 +53,16 @@
 
 @code {
     private bool mini = false;
+
     void ToggleMini() => mini = !mini;
+
+    private string Base => NavigationManager.BaseUri.TrimEnd('/');
+
+    private string To(string path)
+    {
+        if (string.IsNullOrWhiteSpace(path))
+            return $"{Base}/";
+
+        return $"{Base}/{path.TrimStart('/')}";
+    }
 }

@@ -412,6 +412,11 @@
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/wwwroot/_framework/System.Threading.Tasks.Dataflow.wasm.gz
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Binder.wasm.gz
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.wasm.gz
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/web.config
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/dist/wwwroot/sample-data/weather.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/dist/wwwroot/_framework/blazor.boot.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/vercel.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/wwwroot/kicb/_framework/blazor.boot.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/vercel.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/MyBlazorApp.staticwebassets.runtime.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/MyBlazorApp.dll
@@ -1051,8 +1056,3 @@
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Release/net8.0/refint/MyBlazorApp.dll
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Release/net8.0/MyBlazorApp.pdb
 /Users/mans/projects/Kicb/MyBlazorApp/obj/Release/net8.0/ref/MyBlazorApp.dll
-/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/web.config
-/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/dist/wwwroot/sample-data/weather.json
-/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/dist/wwwroot/_framework/blazor.boot.json
-/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/vercel.json
-/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/wwwroot/kicb/_framework/blazor.boot.json
