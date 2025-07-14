@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "public": "publish/wwwroot",
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
-  ]
-}
