@@ -1,6 +1,9 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "public": "publish/wwwroot",
+  "framework": null,
+  "buildCommand": "dotnet publish -c Release --output publish",
+  "outputDirectory": "publish/wwwroot",
   "routes": [
     { "handle": "filesystem" },
     { "src": "/.*", "dest": "/index.html" }
