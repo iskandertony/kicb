@@ -1,26 +1,54 @@
 @inject IJSRuntime JS
+@using System.Globalization
 
-<MudSelect T="string" Value="@Lang" ValueChanged="OnLangChanged" Class="mx-2">
+<MudSelect T="string" @bind-Value="Lang" Class="mx-2" Label="Язык">
   <MudSelectItem Value=@("ru")>ru</MudSelectItem>
   <MudSelectItem Value=@("en")>en</MudSelectItem>
 </MudSelect>
 
+<MudText Typo="Typo.body2" Class="mt-2">
+  Текущая культура (.NET): <strong>@CultureInfo.CurrentUICulture.Name</strong>
+</MudText>
+
+<MudText Typo="Typo.body2">
+  localStorage['culture']: <strong>@LocalStorageLang</strong>
+</MudText>
+
 @code {
   private string Lang = "ru";
+  private string LocalStorageLang = "";
+
+  [Parameter] public EventCallback OnLanguageChanged { get; set; }
 
   protected override async Task OnInitializedAsync()
   {
     var savedLang = await JS.InvokeAsync<string>("localStorage.getItem", "culture");
+    LocalStorageLang = savedLang;
     Lang = string.IsNullOrWhiteSpace(savedLang) ? "ru" : savedLang;
+
+    Console.WriteLine($"[Init] localStorage['culture'] = {savedLang}");
+    Console.WriteLine($"[Init] .NET culture = {CultureInfo.CurrentUICulture.Name}");
   }
 
-  private async Task OnLangChanged(string value)
+  private async Task OnLangChanged()
   {
-    if (Lang != value)
+    await JS.InvokeVoidAsync("localStorage.setItem", "culture", Lang);
+    Console.WriteLine($"[LangChanged] New culture saved to localStorage: {Lang}");
+
+    await OnLanguageChanged.InvokeAsync();
+    await JS.InvokeVoidAsync("location.reload");
+  }
+
+  private string _lang
+  {
+    get => Lang;
+    set
     {
-      Lang = value;
-      await JS.InvokeVoidAsync("localStorage.setItem", "culture", value);
-      await JS.InvokeVoidAsync("location.reload");
+      if (Lang != value)
+      {
+        Lang = value;
+        _ = OnLangChanged();
+      }
     }
   }
 }

@@ -8,7 +8,7 @@ namespace MyBlazorApp.Localization
         public string ChangeLanguage { get; set; } = "Change language";
         public string TestPhrase { get; set; } = "This is a test phrase"; 
 
-        public string FallBackLanguage => "en";
+        public string FallBackLanguage => "ru";
     }
 
 }

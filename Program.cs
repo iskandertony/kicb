@@ -14,21 +14,21 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddMudServices();
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+// Локализация
 builder.Services.AddI18nText<MyResources>();
 
 var host = builder.Build();
 
-// Важно: здесь JSRuntime доступен только после Build()
+// ⚠️ Критически важно: установка культуры до RunAsync
 var js = host.Services.GetRequiredService<IJSRuntime>();
+var savedCulture = await js.InvokeAsync<string>("localStorage.getItem", "culture");
 
-// Читаем язык из localStorage
-var lang = await js.InvokeAsync<string>("localStorage.getItem", "culture") ?? "ru";
-
-// Применяем культуру
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo(lang);
-CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo(lang);
-
-// Показываем в консоли
-await js.InvokeVoidAsync("console.log", $"[Startup] CurrentCulture = {CultureInfo.CurrentCulture}");
+if (!string.IsNullOrWhiteSpace(savedCulture))
+{
+  var culture = new CultureInfo(savedCulture);
+  CultureInfo.DefaultThreadCurrentCulture = culture;
+  CultureInfo.DefaultThreadCurrentUICulture = culture;
+}
 
 await host.RunAsync();

@@ -1,5 +1,3 @@
-@using Microsoft.AspNetCore.Components
-@using Toolbelt.Blazor.I18nText
 @inject I18nText I18n
 @inject IJSRuntime JS
 
@@ -23,10 +21,10 @@
         🌐 @Resources?.TestPhrase
     </MudText>
 
-    <LanguageSwitcher />
+    <LanguageSwitcher OnLanguageChanged="LoadResourcesAsync" />
 
     <MudIconButton Size="Size.Large"
-        Icon="@(IsDarkMode ? Icons.Material.Filled.DarkMode : Icons.Material.Filled.LightMode)" Class="theme-btn"
+        Icon="@(IsDarkMode? Icons.Material.Filled.DarkMode : Icons.Material.Filled.LightMode)" Class="theme-btn"
         OnClick="OnThemeToggleClick" Title="@(IsDarkMode ? "Тёмная тема" : "Светлая тема")" />
 
     <MudMenu AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight">
@@ -49,8 +47,15 @@
 
     protected override async Task OnInitializedAsync()
     {
-        Resources = await I18n.GetTextTableAsync<MyResources>(this);
+        await LoadResourcesAsync();
     }
+
+    private async Task LoadResourcesAsync()
+    {
+        Resources = await I18n.GetTextTableAsync<MyResources>(this);
+        StateHasChanged(); // Обновляем компонент
+    }
+
     private async Task OnThemeToggleClick()
     {
         if (OnThemeToggle.HasDelegate)
