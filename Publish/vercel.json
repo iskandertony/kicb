@@ -2,10 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
   "framework": null,
-  "buildCommand": "dotnet publish -c Release --output publish",
+  "buildCommand": "dotnet workload install wasm-tools && dotnet publish -c Release --output publish",
   "outputDirectory": "publish/wwwroot",
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }

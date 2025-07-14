@@ -1070,3 +1070,8 @@
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/Publish/Publish/vercel.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/Publish/Publish/wwwroot/sample-data/weather.json
 /Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/Publish/Publish/wwwroot/_framework/blazor.boot.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/Publish/Publish/Publish/dist/wwwroot/sample-data/weather.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/Publish/Publish/Publish/dist/wwwroot/_framework/blazor.boot.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/Publish/Publish/Publish/vercel.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/Publish/Publish/Publish/wwwroot/sample-data/weather.json
+/Users/mans/projects/Kicb/MyBlazorApp/bin/Release/net8.0/Publish/Publish/Publish/Publish/wwwroot/_framework/blazor.boot.json

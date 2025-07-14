@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cv/buHeHtOyy7Cwo3GFSrySVRqF9z05VzTGMrCD997w=",
+  "Hash": "MKyLK7xhDGZ5sqAQmPXPfmyWkTCmto0lrirX5u8LNVQ=",
   "Source": "MyBlazorApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -8033,25 +8033,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/index.html"
-    },
-    {
-      "Identity": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/sample-data/weather.json",
-      "SourceId": "MyBlazorApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "sample-data/weather.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/sample-data/weather.json"
     }
   ]
 }
