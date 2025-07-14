@@ -1,0 +1,76 @@
+.bank-card[b-lgklskesmg] {
+  background-color: var(--mud-palette-surface);
+  border-radius: 18px;
+  padding: 18px 20px;
+  min-width: 220px;
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: var(--mud-palette-text-primary);
+  box-shadow: var(--mud-elevation-3);
+  transition: box-shadow 0.3s ease;
+}
+
+.bank-card:hover[b-lgklskesmg] {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bank-card-header[b-lgklskesmg] {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 6px;
+}
+
+.bank-avatar[b-lgklskesmg] {
+  background-color: var(--mud-palette-background);
+  color: var(--mud-palette-primary);
+  border: 1.5px solid var(--mud-palette-lines-default);
+}
+
+.bank-card-title[b-lgklskesmg] {
+  font-weight: 600;
+  font-size: 1.09rem;
+  color: var(--mud-palette-text-primary);
+}
+
+.bank-card-time-row[b-lgklskesmg],
+.bank-card-time[b-lgklskesmg],
+.bank-card-thin[b-lgklskesmg],
+.currency-cell[b-lgklskesmg],
+.rate-cell[b-lgklskesmg] {
+  color: var(--mud-palette-text-secondary);
+}
+
+.bank-card-time-row[b-lgklskesmg] {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bank-card-thin[b-lgklskesmg] {
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+}
+
+.bank-card-currency-row[b-lgklskesmg] {
+  display: flex;
+  align-items: center;
+  padding: 2px 0;
+  font-size: 0.97rem;
+}
+
+.currency-cell[b-lgklskesmg] {
+  display: flex;
+  align-items: center;
+  min-width: 80px;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.rate-cell[b-lgklskesmg] {
+  min-width: 43px;
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+}

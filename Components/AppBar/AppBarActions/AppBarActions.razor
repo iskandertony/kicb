@@ -1,4 +1,7 @@
 @using Microsoft.AspNetCore.Components
+@using Toolbelt.Blazor.I18nText
+@inject I18nText I18n
+@inject IJSRuntime JS
 
 <div class="main-appbar-nav">
     <MudMenu AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight">
@@ -10,16 +13,17 @@
                 <MudText Typo="Typo.subtitle2" Align="Align.Center">
                     <MudIcon Icon="@Icons.Material.Filled.NotificationsOff" Size="Size.Medium"
                         Style="margin-right: 8px;" />
-                    Нет уведомлений
+                    @Resources?.Hello
                 </MudText>
             </MudMenuItem>
         </ChildContent>
     </MudMenu>
 
-    <MudSelect T="string" @bind-Value="_lang" Class="mx-2">
-        <MudSelectItem Value=@("ru")>ru</MudSelectItem>
-        <MudSelectItem Value=@("en")>en</MudSelectItem>
-    </MudSelect>
+    <MudText Typo="Typo.subtitle2" Align="Align.Center">
+        🌐 @Resources?.TestPhrase
+    </MudText>
+
+    <LanguageSwitcher />
 
     <MudIconButton Size="Size.Large"
         Icon="@(IsDarkMode ? Icons.Material.Filled.DarkMode : Icons.Material.Filled.LightMode)" Class="theme-btn"
@@ -41,8 +45,12 @@
     [Parameter] public bool IsDarkMode { get; set; }
     [Parameter] public EventCallback OnThemeToggle { get; set; }
 
-    private string _lang = "ru";
+    private MyResources? Resources;
 
+    protected override async Task OnInitializedAsync()
+    {
+        Resources = await I18n.GetTextTableAsync<MyResources>(this);
+    }
     private async Task OnThemeToggleClick()
     {
         if (OnThemeToggle.HasDelegate)

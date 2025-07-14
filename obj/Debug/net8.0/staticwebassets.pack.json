@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets/MyBlazorApp.styles.css"
     },
     {
+      "Id": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/_content/i18ntext/MyBlazorApp.Localization.MyResources.en-US.json",
+      "PackagePath": "staticwebassets/_content/i18ntext/MyBlazorApp.Localization.MyResources.en-US.json"
+    },
+    {
+      "Id": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/_content/i18ntext/MyBlazorApp.Localization.MyResources.ru.json",
+      "PackagePath": "staticwebassets/_content/i18ntext/MyBlazorApp.Localization.MyResources.ru.json"
+    },
+    {
       "Id": "/Users/mans/projects/Kicb/MyBlazorApp/wwwroot/css/app.css",
       "PackagePath": "staticwebassets/css/app.css"
     },

@@ -3,6 +3,17 @@ build_property.EnableAotAnalyzer =
 build_property.EnableSingleFileAnalyzer = 
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
+build_property.ProjectDir = /Users/mans/projects/Kicb/MyBlazorApp/
+build_property.ProjectDir = /Users/mans/projects/Kicb/MyBlazorApp/
+build_property.RootNamespace = MyBlazorApp
+build_property.RootNamespace = MyBlazorApp
+build_property.RootNamespace = MyBlazorApp
+build_property.I18nTextNamespace = MyBlazorApp.I18nText
+build_property.I18nTextSourceDirectory = /Users/mans/projects/Kicb/MyBlazorApp/i18ntext
+build_property.I18nTextFallBackLanguage = en
+build_property.I18nTextDisableSubNameSpace = false
+build_property.I18nTextIntermediateDir = /Users/mans/projects/Kicb/MyBlazorApp/obj/dist/_content/i18ntext/
+build_property.I18nTextUseSourceGenerator = true
 build_property.MudDebugAnalyzer = 
 build_property.MudAllowedAttributePattern = 
 build_property.MudAllowedAttributeList = 
@@ -14,9 +25,6 @@ build_property.InvariantGlobalization = false
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = browser
-build_property.RootNamespace = MyBlazorApp
-build_property.RootNamespace = MyBlazorApp
-build_property.ProjectDir = /Users/mans/projects/Kicb/MyBlazorApp/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
@@ -27,6 +35,10 @@ build_property._RazorSourceGeneratorDebug =
 
 [/Users/mans/projects/Kicb/MyBlazorApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mans/projects/Kicb/MyBlazorApp/Components/LanguageSwitcher/LanguageSwitcher.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYW5ndWFnZVN3aXRjaGVyL0xhbmd1YWdlU3dpdGNoZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/mans/projects/Kicb/MyBlazorApp/Components/ThemeProvider/ThemeProvider.razor]
@@ -65,10 +77,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mans/projects/Kicb/MyBlazorApp/Components/ BankCard/BankCard.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy8gQmFua0NhcmQvQmFua0NhcmQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-w5ykolrnh3
-
 [/Users/mans/projects/Kicb/MyBlazorApp/Components/AppBar/AppBar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHBCYXIvQXBwQmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-k7kxtcavde
@@ -76,6 +84,10 @@ build_metadata.AdditionalFiles.CssScope = b-k7kxtcavde
 [/Users/mans/projects/Kicb/MyBlazorApp/Components/AppBar/AppBarActions/AppBarActions.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHBCYXIvQXBwQmFyQWN0aW9ucy9BcHBCYXJBY3Rpb25zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-bconeas9m4
+
+[/Users/mans/projects/Kicb/MyBlazorApp/Components/BankCard/BankCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9CYW5rQ2FyZC9CYW5rQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-lgklskesmg
 
 [/Users/mans/projects/Kicb/MyBlazorApp/Components/DashBoardCharts/DashBoardCharts.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9EYXNoQm9hcmRDaGFydHMvRGFzaEJvYXJkQ2hhcnRzLnJhem9y
