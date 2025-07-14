@@ -1,0 +1,289 @@
+/* /Components/ BankCard/BankCard.razor.rz.scp.css */
+.bank-card[b-w5ykolrnh3] {
+  background-color: var(--mud-palette-surface);
+  border-radius: 18px;
+  padding: 18px 20px;
+  min-width: 220px;
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: var(--mud-palette-text-primary);
+  box-shadow: var(--mud-elevation-3);
+  transition: box-shadow 0.3s ease;
+}
+
+.bank-card:hover[b-w5ykolrnh3] {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* акцент при ховере */
+}
+
+.bank-card-header[b-w5ykolrnh3] {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 6px;
+}
+
+.bank-avatar[b-w5ykolrnh3] {
+  background-color: var(--mud-palette-background);
+  color: var(--mud-palette-primary);
+  border: 1.5px solid var(--mud-palette-lines-default);
+}
+
+.bank-card-title[b-w5ykolrnh3] {
+  font-weight: 600;
+  font-size: 1.09rem;
+  color: var(--mud-palette-text-primary);
+}
+
+.bank-card-time-row[b-w5ykolrnh3],
+.bank-card-time[b-w5ykolrnh3],
+.bank-card-thin[b-w5ykolrnh3],
+.currency-cell[b-w5ykolrnh3],
+.rate-cell[b-w5ykolrnh3] {
+  color: var(--mud-palette-text-secondary);
+}
+
+.bank-card-time-row[b-w5ykolrnh3] {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bank-card-thin[b-w5ykolrnh3] {
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+}
+
+.bank-card-currency-row[b-w5ykolrnh3] {
+  display: flex;
+  align-items: center;
+  padding: 2px 0;
+  font-size: 0.97rem;
+}
+
+.currency-cell[b-w5ykolrnh3] {
+  display: flex;
+  align-items: center;
+  min-width: 80px;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.rate-cell[b-w5ykolrnh3] {
+  min-width: 43px;
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+}
+/* /Components/AppBar/AppBar.razor.rz.scp.css */
+.appbar-bg[b-k7kxtcavde] {
+  width: 100%;
+  justify-content: flex-end;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.main-appbar[b-k7kxtcavde] {
+  background: var(--mud-palette-background);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.lang-item[b-k7kxtcavde] {
+  cursor: pointer;
+  padding: 0 2px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.lang-active[b-k7kxtcavde] {
+  opacity: 1;
+  color: var(--mud-palette-primary); 
+  cursor: default;
+}
+
+.lang-divider[b-k7kxtcavde] {
+  margin: 0 2px;
+  opacity: 0.4;
+}
+
+.notif-btn[b-k7kxtcavde],
+.theme-btn[b-k7kxtcavde],
+.profile-btn[b-k7kxtcavde] {
+  margin-left: 8px;
+}
+/* /Components/AppBar/AppBarActions/AppBarActions.razor.rz.scp.css */
+.main-appbar-nav[b-bconeas9m4] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* /Components/DashBoardCharts/DashBoardCharts.razor.rz.scp.css */
+.dashboard-charts[b-debeznhl2c] {
+    display: flex;
+    gap: 24px;
+    padding: 20px;
+}
+.mud-paper-root.dashboard-chart *[b-debeznhl2c] {
+    display: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px 0 #ececec;
+    padding: 24px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chart-title[b-debeznhl2c] {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 1400px) {
+   .dashboard-charts[b-debeznhl2c] {
+   flex-wrap: wrap;
+}
+}
+/* /Components/Sidebar/Sidebar.razor.rz.scp.css */
+.sidebar[b-opwouz2lp2] {
+  background-color: #3a474d;
+  color: white;
+  max-width: 240px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #323f45;
+  transition: max-width 0.18s;
+  z-index: 999;
+  --mud-palette-drawer-icon: #fff !important;
+  --mud-palette-primary: #fff !important;
+}
+.sidebar.mini[b-opwouz2lp2] {
+  max-width: 56px;
+  transition: max-width 0.18s;
+}
+.sidebar-header[b-opwouz2lp2] {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+.sidebar.mini .sidebar-title[b-opwouz2lp2] {
+  display: none;
+}
+.sidebar-title[b-opwouz2lp2] {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.sidebar-menu-btn[b-opwouz2lp2] {
+  color: #b0bac9;
+}
+.nav-link[b-opwouz2lp2] {
+  width: 100%;
+  color: #b0bac9;
+  font-size: 15px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-link:hover[b-opwouz2lp2] {
+  background: #28353b;
+  color: #fff;
+}
+.nav-link.mud-nav-link-active[b-opwouz2lp2] {
+  background-color: #28353b;
+  color: #fff;
+}
+.nav-link.mud-nav-link-active .mud-icon-root[b-opwouz2lp2] {
+  color: #fff;
+}
+.nav-group .mud-nav-group-title[b-opwouz2lp2] {
+  color: #b0bac9;
+  font-size: 15px;
+  font-weight: 500;
+}
+.nav-group .mud-nav-group-title:hover[b-opwouz2lp2] {
+  color: #fff;
+}
+.divider[b-opwouz2lp2] {
+  border-bottom: 1px solid #323f45;
+  margin: 10px 0;
+}
+.sidebar.mini .label[b-opwouz2lp2],
+.sidebar.mini .mud-nav-group-title[b-opwouz2lp2] {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .sidebar[b-opwouz2lp2] {
+    max-width: 48px !important;
+  }
+  .sidebar:not(.mini)[b-opwouz2lp2] {
+    max-width: 48px !important;
+  }
+  .sidebar .sidebar-title[b-opwouz2lp2],
+  .sidebar .mud-nav-group-title[b-opwouz2lp2],
+  .sidebar .label[b-opwouz2lp2] {
+    display: none !important;
+  }
+}
+/* /Layout/MainLayout.razor.rz.scp.css */
+.page[b-uwjohrdo2z] {
+  display: flex;
+  background: var(--mud-palette-background);
+  min-height: 100vh;
+}
+
+.content[b-uwjohrdo2z] {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.main-content[b-uwjohrdo2z] {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 64px;
+}
+/* /Pages/Dashboard.razor.rz.scp.css */
+.dashboard-charts[b-lgsmtgcejn] {
+    display: flex;
+    gap: 24px;
+}
+.mud-paper-root.dashboard-chart *[b-lgsmtgcejn] {
+    display: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px 0 #ececec;
+    padding: 24px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chart-title[b-lgsmtgcejn] {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.bank-cards-list[b-lgsmtgcejn] {
+    display: flex;
+    gap: 24px;
+    margin-top: 18px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+}
+
